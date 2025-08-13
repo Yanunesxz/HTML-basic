@@ -1,0 +1,54 @@
+:root {
+  --bg-light: #ffffff;
+  --text-light: #222222;
+  --bg-dark: #222222;
+  --text-dark: #00ff00;
+}
+
+body {
+  margin: 0;
+  padding: 2rem;
+  font-family: Arial, sans-serif;
+  background-color: var(--bg-light);
+  color: var(--text-light);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-theme {
+  background-color: var(--bg-dark);
+  color: var(--text-dark);
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+ul {
+  list-style: square inside;
+  max-width: 300px;
+  padding-left: 0;
+  margin-bottom: 2rem;
+}
+
+button#theme-toggle {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button#theme-toggle:hover,
+button#theme-toggle:focus {
+  background-color: #0056b3;
+  outline: none;
+}
